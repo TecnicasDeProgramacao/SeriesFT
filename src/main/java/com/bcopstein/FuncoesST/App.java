@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-       // TODO: aplicacao para demonstrar o uso da API
+    	Trig t = new Trig();
+    	System.out.println(t.sin(Math.PI));
     }
 }
