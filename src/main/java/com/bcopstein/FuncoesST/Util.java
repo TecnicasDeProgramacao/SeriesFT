@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Util {
 	public static double fatorial(int n) {
-		double resp = 2;
+		double resp = 1;
 		for(;n>1;n--) {
 			resp = resp*n;
 		}
@@ -12,7 +12,7 @@ public class Util {
 	}
 	
 	public static double somatorio(int inic,int fim,List<Double> valores) {
-		return Util.somatorio(valores.subList(inic, fim-1)); 
+		return Util.somatorio(valores.subList(inic, fim)); 
 	}
 	
 	private static double somatorio(List<Double> valores) {

@@ -15,18 +15,15 @@ public class Lambert {
 	}
 	
 	public double W0(double x) {
-		
-		if (Math.abs(x) < 1/Math.E) throw new IllegalArgumentException();
-		
-		
+		this.lst = new ArrayList<>();
+		if (Math.abs(x) < 1/Math.E) throw new IllegalArgumentException();		
 		double lim = 10e-6;
 		int i = 0;
 		do {
 			i++;
 			double lambert = 0;
 			lambert =Math.pow(i, i-1)/Util.fatorial(i) * Math.pow(x, i);
-			lst.add(lambert);
-			
+			lst.add(lambert);			
 			
 		} while(lst.get(i) < lim);
 		return Util.somatorio(1, i, lst);

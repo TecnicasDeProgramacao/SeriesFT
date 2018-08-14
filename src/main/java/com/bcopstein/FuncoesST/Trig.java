@@ -21,6 +21,7 @@ public class Trig
 
 	public double cos(double x) 
 	{
+		this.lstValores = new ArrayList<Double>();
 		double termo = 1.0;
 		int n = 0;
 		while(termo >= 10E-6)
@@ -36,6 +37,7 @@ public class Trig
 
 	public double sin(double x) 
 	{
+		this.lstValores = new ArrayList<Double>();
 		double termo = 1.0;
 		int n = 0;
 		while(termo >= 10E-6)
@@ -46,6 +48,6 @@ public class Trig
 			this.lstValores.add(termo);
 			n++;
 		}
-		return Util.somatorio(0, n, lstValores);
+		return Util.somatorio(0, n-1, lstValores);
 	}
 }
