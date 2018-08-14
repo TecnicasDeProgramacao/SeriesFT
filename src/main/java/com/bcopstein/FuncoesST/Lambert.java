@@ -25,7 +25,7 @@ public class Lambert {
 			lambert =Math.pow(i, i-1)/Util.fatorial(i) * Math.pow(x, i);
 			lst.add(lambert);			
 			
-		} while(lst.get(i) < lim);
+		} while(lst.get(i) > lim);
 		return Util.somatorio(1, i, lst);
 		
 	}
