@@ -9,6 +9,6 @@ public class App
     public static void main( String[] args )
     {
     	Trig t = new Trig();
-    	System.out.println(t.sin(Math.PI));
+    	System.out.println(t.sin(Math.PI/3));
     }
 }

@@ -48,6 +48,6 @@ public class Trig
 			this.lstValores.add(termo);
 			n++;
 		}
-		return Util.somatorio(0, n-1, lstValores);
+		return Util.somatorio(0, n, lstValores);
 	}
 }
